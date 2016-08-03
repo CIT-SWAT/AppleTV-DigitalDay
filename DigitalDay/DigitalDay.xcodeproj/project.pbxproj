@@ -10,8 +10,8 @@
 		13F8686F2E3AB25F30594F40 /* Pods_DigitalDay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0FD8911E0B602387DE57A20 /* Pods_DigitalDay.framework */; };
 		2A7E57A11D5228140070B625 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A7E57901D5228140070B625 /* Assets.xcassets */; };
 		2A7E57A21D5228140070B625 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A7E57911D5228140070B625 /* Main.storyboard */; };
-		2A7E57A31D5228140070B625 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7E57951D5228140070B625 /* FirstViewController.swift */; };
-		2A7E57A41D5228140070B625 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7E57961D5228140070B625 /* SecondViewController.swift */; };
+		2A7E57A31D5228140070B625 /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7E57951D5228140070B625 /* MoviesViewController.swift */; };
+		2A7E57A41D5228140070B625 /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7E57961D5228140070B625 /* FavoriteViewController.swift */; };
 		2A7E57A51D5228140070B625 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7E57981D5228140070B625 /* AppDelegate.swift */; };
 		2A7E57A61D5228140070B625 /* TraktService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7E579B1D5228140070B625 /* TraktService.swift */; };
 		2A7E57A71D5228140070B625 /* TraktShow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7E579D1D5228140070B625 /* TraktShow.swift */; };
@@ -24,8 +24,8 @@
 		2A7E577B1D5212FD0070B625 /* DigitalDay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DigitalDay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A7E57901D5228140070B625 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2A7E57921D5228140070B625 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		2A7E57951D5228140070B625 /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		2A7E57961D5228140070B625 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		2A7E57951D5228140070B625 /* MoviesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviesViewController.swift; sourceTree = "<group>"; };
+		2A7E57961D5228140070B625 /* FavoriteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
 		2A7E57981D5228140070B625 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2A7E579B1D5228140070B625 /* TraktService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TraktService.swift; sourceTree = "<group>"; };
 		2A7E579D1D5228140070B625 /* TraktShow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TraktShow.swift; sourceTree = "<group>"; };
@@ -97,8 +97,8 @@
 		2A7E57941D5228140070B625 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				2A7E57951D5228140070B625 /* FirstViewController.swift */,
-				2A7E57961D5228140070B625 /* SecondViewController.swift */,
+				2A7E57951D5228140070B625 /* MoviesViewController.swift */,
+				2A7E57961D5228140070B625 /* FavoriteViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -204,6 +204,7 @@
 				TargetAttributes = {
 					2A7E577A1D5212FD0070B625 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = DC7P966WU6;
 					};
 				};
 			};
@@ -294,8 +295,8 @@
 				2A7E57A51D5228140070B625 /* AppDelegate.swift in Sources */,
 				2A7E57A71D5228140070B625 /* TraktShow.swift in Sources */,
 				2A7E57A61D5228140070B625 /* TraktService.swift in Sources */,
-				2A7E57A41D5228140070B625 /* SecondViewController.swift in Sources */,
-				2A7E57A31D5228140070B625 /* FirstViewController.swift in Sources */,
+				2A7E57A41D5228140070B625 /* FavoriteViewController.swift in Sources */,
+				2A7E57A31D5228140070B625 /* MoviesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,6 +403,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "$(SRCROOT)/DigitalDay/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ciandt.com.DigitalDay;
@@ -415,6 +417,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "$(SRCROOT)/DigitalDay/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ciandt.com.DigitalDay;
