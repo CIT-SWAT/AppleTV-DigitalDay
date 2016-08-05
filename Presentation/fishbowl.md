@@ -13,4 +13,5 @@
 
 <br>
 
-wifi: XXXXXX
+Wifi: CUBO - Eventos
+Password: cubo2016 
